@@ -61,7 +61,7 @@ struct ThreadsTabBar: View {
         .sheet(isPresented: $showCreateThread, onDismiss: {
             selectedTab = 0
         }, content: {
-            CreateThreadView()
+            CreateThreadView()  
         })
         .tint(.black)
     }

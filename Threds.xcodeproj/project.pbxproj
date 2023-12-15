@@ -55,6 +55,8 @@
 		DE38B2FE2B2CB95F00D60E00 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE38B2FD2B2CB95F00D60E00 /* FirebaseRemoteConfigSwift */; };
 		DE38B3002B2CB95F00D60E00 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DE38B2FF2B2CB95F00D60E00 /* FirebaseStorage */; };
 		DE38B3022B2CB95F00D60E00 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DE38B3012B2CB95F00D60E00 /* FirebaseStorageCombine-Community */; };
+		DE38B3062B2CC46900D60E00 /* RegistrationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B3052B2CC46900D60E00 /* RegistrationVIewModel.swift */; };
+		DE38B3092B2CCA5500D60E00 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B3082B2CCA5500D60E00 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		DE38B2C52B2B521000D60E00 /* ProfileThreadsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadsFilter.swift; sourceTree = "<group>"; };
 		DE38B2C82B2B68EF00D60E00 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		DE38B2CA2B2CB61B00D60E00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DE38B3052B2CC46900D60E00 /* RegistrationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVIewModel.swift; sourceTree = "<group>"; };
+		DE38B3082B2CCA5500D60E00 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				DE38B29C2B27870300D60E00 /* Views */,
+				DE38B3042B2CC44200D60E00 /* Service */,
+				DE38B3032B2CC43700D60E00 /* ViewModel */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -364,6 +370,22 @@
 			path = EditProfile;
 			sourceTree = "<group>";
 		};
+		DE38B3032B2CC43700D60E00 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE38B3052B2CC46900D60E00 /* RegistrationVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE38B3042B2CC44200D60E00 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DE38B3082B2CCA5500D60E00 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,8 +496,10 @@
 				DE38B28B2B27857200D60E00 /* Threds.xcdatamodeld in Sources */,
 				DE38B2C12B29DEBD00D60E00 /* CircularProfileImageView.swift in Sources */,
 				DE38B2A32B289EB200D60E00 /* ThredsTextFieldModifier.swift in Sources */,
+				DE38B3092B2CCA5500D60E00 /* AuthService.swift in Sources */,
 				DE38B2B02B28CFCC00D60E00 /* ExploreView.swift in Sources */,
 				DE38B2B82B28D0D700D60E00 /* ActivityView.swift in Sources */,
+				DE38B3062B2CC46900D60E00 /* RegistrationVIewModel.swift in Sources */,
 				DE38B2C62B2B521000D60E00 /* ProfileThreadsFilter.swift in Sources */,
 				DE38B2C32B29E02C00D60E00 /* UserCell.swift in Sources */,
 				DE38B2812B27856D00D60E00 /* ContentView.swift in Sources */,
@@ -626,6 +650,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +680,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -24,7 +24,7 @@ struct ThredsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

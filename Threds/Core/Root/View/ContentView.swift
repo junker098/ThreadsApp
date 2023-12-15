@@ -10,10 +10,16 @@ import CoreData
 
 struct ContentView: View {
     
+    @StateObject var viewModel = ContentViewModel()
     
     var body: some View {
-        Text("Hello world")
-        Image(systemName: "mic")
+        Group {
+            if viewModel.userSession != nil {
+                ThreadsTabBar()
+            } else {
+                LoginView()
+            }
+        }
     }
     
 }

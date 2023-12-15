@@ -57,6 +57,8 @@
 		DE38B3022B2CB95F00D60E00 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DE38B3012B2CB95F00D60E00 /* FirebaseStorageCombine-Community */; };
 		DE38B3062B2CC46900D60E00 /* RegistrationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B3052B2CC46900D60E00 /* RegistrationVIewModel.swift */; };
 		DE38B3092B2CCA5500D60E00 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B3082B2CCA5500D60E00 /* AuthService.swift */; };
+		DE38B30E2B2CDA1900D60E00 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B30D2B2CDA1900D60E00 /* ContentViewModel.swift */; };
+		DE38B3102B2CEDB800D60E00 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B30F2B2CEDB800D60E00 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		DE38B2CA2B2CB61B00D60E00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE38B3052B2CC46900D60E00 /* RegistrationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVIewModel.swift; sourceTree = "<group>"; };
 		DE38B3082B2CCA5500D60E00 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DE38B30D2B2CDA1900D60E00 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DE38B30F2B2CEDB800D60E00 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,7 +235,8 @@
 		DE38B29B2B2786D600D60E00 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				DE38B2802B27856D00D60E00 /* ContentView.swift */,
+				DE38B30B2B2CD9A800D60E00 /* View */,
+				DE38B30A2B2CD99C00D60E00 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				DE38B3052B2CC46900D60E00 /* RegistrationVIewModel.swift */,
+				DE38B30F2B2CEDB800D60E00 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -384,6 +390,22 @@
 				DE38B3082B2CCA5500D60E00 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DE38B30A2B2CD99C00D60E00 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE38B30D2B2CDA1900D60E00 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE38B30B2B2CD9A800D60E00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE38B2802B27856D00D60E00 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +513,7 @@
 			files = (
 				DE38B2C92B2B68EF00D60E00 /* EditProfileView.swift in Sources */,
 				DE38B2A02B279FA700D60E00 /* RegistrationVIew.swift in Sources */,
+				DE38B3102B2CEDB800D60E00 /* LoginViewModel.swift in Sources */,
 				DE38B2BC2B28D13900D60E00 /* ProfileView.swift in Sources */,
 				DE38B2AB2B28CF3E00D60E00 /* FeedView.swift in Sources */,
 				DE38B28B2B27857200D60E00 /* Threds.xcdatamodeld in Sources */,
@@ -506,6 +529,7 @@
 				DE38B2B42B28D07900D60E00 /* CreateThreadView.swift in Sources */,
 				DE38B2A52B28A86600D60E00 /* ThredsButtonModifier.swift in Sources */,
 				DE38B2A82B28ABCB00D60E00 /* ThreadsTabBar.swift in Sources */,
+				DE38B30E2B2CDA1900D60E00 /* ContentViewModel.swift in Sources */,
 				DE38B2BE2B28D46C00D60E00 /* ThreadCell.swift in Sources */,
 				DE38B29E2B27872000D60E00 /* LoginView.swift in Sources */,
 				DE38B27F2B27856D00D60E00 /* ThredsApp.swift in Sources */,

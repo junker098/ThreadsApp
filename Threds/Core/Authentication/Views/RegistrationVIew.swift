@@ -31,8 +31,10 @@ struct RegistrationVIew: View {
                 TextField("Enter your fullname", text: $viewModel.fullName)
                     .modifier(ThredsTextFieldModifier())
 
-                TextField("Enter your name", text: $viewModel.userName)
+                TextField("Enter your username", text: $viewModel.userName)
                     .modifier(ThredsTextFieldModifier())
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled(true)
                 
                 Button {
                     Task { try await viewModel.createUser() }

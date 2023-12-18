@@ -59,6 +59,9 @@
 		DE38B3092B2CCA5500D60E00 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B3082B2CCA5500D60E00 /* AuthService.swift */; };
 		DE38B30E2B2CDA1900D60E00 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B30D2B2CDA1900D60E00 /* ContentViewModel.swift */; };
 		DE38B3102B2CEDB800D60E00 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38B30F2B2CEDB800D60E00 /* LoginViewModel.swift */; };
+		DE5882CE2B2DC555003E2438 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5882CD2B2DC555003E2438 /* User.swift */; };
+		DE5882D02B306B24003E2438 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5882CF2B306B24003E2438 /* UserService.swift */; };
+		DE5882D32B308855003E2438 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5882D22B308855003E2438 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		DE38B3082B2CCA5500D60E00 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DE38B30D2B2CDA1900D60E00 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		DE38B30F2B2CEDB800D60E00 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DE5882CD2B2DC555003E2438 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE5882CF2B306B24003E2438 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		DE5882D22B308855003E2438 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 		DE38B2952B27863700D60E00 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DE5882CF2B306B24003E2438 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 		DE38B2982B27863D00D60E00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE5882CD2B2DC555003E2438 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 		DE38B2B92B28D12000D60E00 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				DE5882D12B308841003E2438 /* ViewModel */,
 				DE38B2C72B2B68D700D60E00 /* EditProfile */,
 				DE38B2C42B2B51FA00D60E00 /* Model */,
 				DE38B2BA2B28D12800D60E00 /* View */,
@@ -406,6 +415,14 @@
 				DE38B2802B27856D00D60E00 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DE5882D12B308841003E2438 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE5882D22B308855003E2438 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,14 +542,17 @@
 				DE38B3062B2CC46900D60E00 /* RegistrationVIewModel.swift in Sources */,
 				DE38B2C62B2B521000D60E00 /* ProfileThreadsFilter.swift in Sources */,
 				DE38B2C32B29E02C00D60E00 /* UserCell.swift in Sources */,
+				DE5882D32B308855003E2438 /* ProfileViewModel.swift in Sources */,
 				DE38B2812B27856D00D60E00 /* ContentView.swift in Sources */,
 				DE38B2B42B28D07900D60E00 /* CreateThreadView.swift in Sources */,
 				DE38B2A52B28A86600D60E00 /* ThredsButtonModifier.swift in Sources */,
 				DE38B2A82B28ABCB00D60E00 /* ThreadsTabBar.swift in Sources */,
 				DE38B30E2B2CDA1900D60E00 /* ContentViewModel.swift in Sources */,
 				DE38B2BE2B28D46C00D60E00 /* ThreadCell.swift in Sources */,
+				DE5882D02B306B24003E2438 /* UserService.swift in Sources */,
 				DE38B29E2B27872000D60E00 /* LoginView.swift in Sources */,
 				DE38B27F2B27856D00D60E00 /* ThredsApp.swift in Sources */,
+				DE5882CE2B2DC555003E2438 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

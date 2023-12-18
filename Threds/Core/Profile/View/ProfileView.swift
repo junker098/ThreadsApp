@@ -16,6 +16,9 @@ struct ProfileView: View {
         let count = CGFloat(ProfileThreadsFilter.allCases.count)
         return UIScreen.main.bounds.width / count - 16
     }
+    private var currentUser: User? {
+        viewModel.currentUser
+    }
     
     var body: some View {
         
@@ -27,15 +30,17 @@ struct ProfileView: View {
                         VStack(alignment: .leading ,spacing:  12) {
                             VStack(alignment:.leading, spacing: 4) {
                                 //fullname and username
-                                Text("Charles Leclerc")
+                                Text(currentUser?.fullName ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
-                                Text("Surname")
+                                Text(currentUser?.usename ?? "")
                                     .font(.subheadline)
                             }
                             
-                            Text("Formula driven")
-                                .font(.footnote)
+                            if let bio = currentUser?.bio {
+                                Text(bio)
+                                    .font(.footnote)
+                            }
                             
                             Text("2 followers")
                                 .font(.caption)

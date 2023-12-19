@@ -7,12 +7,16 @@
 
 import SwiftUI
 import FirebaseCore
+import FirebaseCrashlytics
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
 
+//#if DEBUG
+//      Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(false)
+//#endif
     return true
   }
 }

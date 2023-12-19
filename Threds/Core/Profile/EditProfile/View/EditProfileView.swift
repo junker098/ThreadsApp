@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct EditProfileView: View {
     
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
+    @Environment(\.dismiss) var dismiss
+    @StateObject var viewModel = EditProfileVIewModel()
     
     var body: some View {
         NavigationStack {
@@ -31,7 +34,18 @@ struct EditProfileView: View {
                         
                         Spacer()
                         
-                        CircularProfileImageView()
+                        PhotosPicker(selection: $viewModel.selectedItem) {
+                            if let image = viewModel.profileImage {
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                            } else {
+                                CircularProfileImageView()
+                            }
+                        }
+                        
                     }
                     
                     Divider()
@@ -72,6 +86,7 @@ struct EditProfileView: View {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Cancel") {
                         //cancel action
+                        dismiss()
                     }
                     .foregroundColor(.black)
                     .font(.subheadline)
@@ -79,7 +94,10 @@ struct EditProfileView: View {
                  
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {
-                        //cancel action
+                        Task {
+                            try await viewModel.updateUserData()
+                            dismiss()
+                        }
                     }
                     .foregroundColor(.black)
                     .fontWeight(.semibold)

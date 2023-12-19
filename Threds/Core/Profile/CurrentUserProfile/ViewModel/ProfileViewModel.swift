@@ -6,10 +6,12 @@
 //
 
 import Combine
+import SwiftUI
 
 class CurrentUserProfileViewModel: ObservableObject {
     
     @Published var currentUser: User?
+    
     private var cancelables = Set<AnyCancellable>()
     
     init() {

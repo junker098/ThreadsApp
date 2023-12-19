@@ -90,6 +90,8 @@
 		DE5954B82B30E26E00DAC614 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954B72B30E26E00DAC614 /* CurrentUserProfileView.swift */; };
 		DE5954BD2B30E67800DAC614 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954BC2B30E67800DAC614 /* ProfileHeaderView.swift */; };
 		DE5954BF2B31BA3400DAC614 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954BE2B31BA3400DAC614 /* UserContentListView.swift */; };
+		DE5954C42B31FFA800DAC614 /* EditProfileVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954C32B31FFA800DAC614 /* EditProfileVIewModel.swift */; };
+		DE5954C62B32094200DAC614 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954C52B32094200DAC614 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +129,8 @@
 		DE5954B72B30E26E00DAC614 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		DE5954BC2B30E67800DAC614 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		DE5954BE2B31BA3400DAC614 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
+		DE5954C32B31FFA800DAC614 /* EditProfileVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVIewModel.swift; sourceTree = "<group>"; };
+		DE5954C52B32094200DAC614 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5882CF2B306B24003E2438 /* UserService.swift */,
+				DE5954C52B32094200DAC614 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -439,7 +444,8 @@
 		DE38B2C72B2B68D700D60E00 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
-				DE38B2C82B2B68EF00D60E00 /* EditProfileView.swift */,
+				DE5954C02B31FF7D00DAC614 /* View */,
+				DE5954C12B31FF8600DAC614 /* ViewModel */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -495,8 +501,8 @@
 		DE5954B62B30E24400DAC614 /* CurrentUserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				DE5954BA2B30E27800DAC614 /* ViewModel */,
 				DE5954B92B30E27400DAC614 /* View */,
+				DE5954BA2B30E27800DAC614 /* ViewModel */,
 			);
 			path = CurrentUserProfile;
 			sourceTree = "<group>";
@@ -524,6 +530,22 @@
 				DE5954BE2B31BA3400DAC614 /* UserContentListView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		DE5954C02B31FF7D00DAC614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE38B2C82B2B68EF00D60E00 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE5954C12B31FF8600DAC614 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE5954C32B31FFA800DAC614 /* EditProfileVIewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -657,6 +679,7 @@
 				DE38B3102B2CEDB800D60E00 /* LoginViewModel.swift in Sources */,
 				DE38B2BC2B28D13900D60E00 /* ProfileView.swift in Sources */,
 				DE38B2AB2B28CF3E00D60E00 /* FeedView.swift in Sources */,
+				DE5954C42B31FFA800DAC614 /* EditProfileVIewModel.swift in Sources */,
 				DE38B28B2B27857200D60E00 /* Threds.xcdatamodeld in Sources */,
 				DE38B2C12B29DEBD00D60E00 /* CircularProfileImageView.swift in Sources */,
 				DE5954B52B30CFE400DAC614 /* PreviewProvider.swift in Sources */,
@@ -664,6 +687,7 @@
 				DE5954B32B30CB7700DAC614 /* ExploreViewModel.swift in Sources */,
 				DE38B3092B2CCA5500D60E00 /* AuthService.swift in Sources */,
 				DE38B2B02B28CFCC00D60E00 /* ExploreView.swift in Sources */,
+				DE5954C62B32094200DAC614 /* ImageUploader.swift in Sources */,
 				DE38B2B82B28D0D700D60E00 /* ActivityView.swift in Sources */,
 				DE38B3062B2CC46900D60E00 /* RegistrationVIewModel.swift in Sources */,
 				DE38B2C62B2B521000D60E00 /* ProfileThreadsFilter.swift in Sources */,

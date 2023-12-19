@@ -7,7 +7,7 @@
 
 import Combine
 
-class ProfileViewModel: ObservableObject {
+class CurrentUserProfileViewModel: ObservableObject {
     
     @Published var currentUser: User?
     private var cancelables = Set<AnyCancellable>()
@@ -19,7 +19,6 @@ class ProfileViewModel: ObservableObject {
     private func setupSubscribers() {
         UserService.shared.$currentuser.sink { [weak self] user in
             self?.currentUser = user
-            print("DEBUG: User in VM from combine \(user)")
         }.store(in: &cancelables)
     }
 }

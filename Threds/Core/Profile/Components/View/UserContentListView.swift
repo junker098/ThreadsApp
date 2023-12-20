@@ -9,11 +9,17 @@ import SwiftUI
 
 struct UserContentListView: View {
     
+    @StateObject var viewModel: UserContentListVIewModel
     @State private var selectedFilter: ProfileThreadsFilter = .threads
     @Namespace private var animation
+    
     private var rectangleWidth: CGFloat {
         let count = CGFloat(ProfileThreadsFilter.allCases.count)
         return UIScreen.main.bounds.width / count - 16
+    }
+    
+    init(user: User) {
+        self._viewModel = StateObject(wrappedValue: UserContentListVIewModel(user: user))
     }
     
     var body: some View {
@@ -44,8 +50,8 @@ struct UserContentListView: View {
             }
             
             LazyVStack {
-                ForEach(0...10, id: \.self) { thread in
-          //          ThreadCell()
+                ForEach(viewModel.threads) { thread in
+                    ThreadCell(thread: thread)
                 }
             }
         }
@@ -55,5 +61,5 @@ struct UserContentListView: View {
 }
 
 #Preview {
-    UserContentListView()
+    UserContentListView(user: User.placeholder)
 }

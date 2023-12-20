@@ -93,6 +93,9 @@
 		DE5954C42B31FFA800DAC614 /* EditProfileVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954C32B31FFA800DAC614 /* EditProfileVIewModel.swift */; };
 		DE5954C62B32094200DAC614 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954C52B32094200DAC614 /* ImageUploader.swift */; };
 		DE5954C92B323BB400DAC614 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE5954C82B323BB400DAC614 /* Kingfisher */; };
+		DE5954CB2B3337D800DAC614 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954CA2B3337D800DAC614 /* Thread.swift */; };
+		DE5954CE2B333CA900DAC614 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954CD2B333CA900DAC614 /* CreateThreadViewModel.swift */; };
+		DE5954D02B333CF400DAC614 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954CF2B333CF400DAC614 /* ThreadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +135,9 @@
 		DE5954BE2B31BA3400DAC614 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
 		DE5954C32B31FFA800DAC614 /* EditProfileVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVIewModel.swift; sourceTree = "<group>"; };
 		DE5954C52B32094200DAC614 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		DE5954CA2B3337D800DAC614 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		DE5954CD2B333CA900DAC614 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		DE5954CF2B333CF400DAC614 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +272,7 @@
 			children = (
 				DE5882CF2B306B24003E2438 /* UserService.swift */,
 				DE5954C52B32094200DAC614 /* ImageUploader.swift */,
+				DE5954CF2B333CF400DAC614 /* ThreadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -290,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5882CD2B2DC555003E2438 /* User.swift */,
+				DE5954CA2B3337D800DAC614 /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				DE38B2B22B28D06600D60E00 /* View */,
+				DE5954CC2B333C9700DAC614 /* ViewModel */,
 			);
 			path = CreateThread;
 			sourceTree = "<group>";
@@ -550,6 +559,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DE5954CC2B333C9700DAC614 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE5954CD2B333CA900DAC614 /* CreateThreadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -687,10 +704,12 @@
 				DE38B28B2B27857200D60E00 /* Threds.xcdatamodeld in Sources */,
 				DE38B2C12B29DEBD00D60E00 /* CircularProfileImageView.swift in Sources */,
 				DE5954B52B30CFE400DAC614 /* PreviewProvider.swift in Sources */,
+				DE5954D02B333CF400DAC614 /* ThreadService.swift in Sources */,
 				DE38B2A32B289EB200D60E00 /* ThredsTextFieldModifier.swift in Sources */,
 				DE5954B32B30CB7700DAC614 /* ExploreViewModel.swift in Sources */,
 				DE38B3092B2CCA5500D60E00 /* AuthService.swift in Sources */,
 				DE38B2B02B28CFCC00D60E00 /* ExploreView.swift in Sources */,
+				DE5954CB2B3337D800DAC614 /* Thread.swift in Sources */,
 				DE5954C62B32094200DAC614 /* ImageUploader.swift in Sources */,
 				DE38B2B82B28D0D700D60E00 /* ActivityView.swift in Sources */,
 				DE38B3062B2CC46900D60E00 /* RegistrationVIewModel.swift in Sources */,
@@ -700,6 +719,7 @@
 				DE5882D32B308855003E2438 /* ProfileViewModel.swift in Sources */,
 				DE5954B82B30E26E00DAC614 /* CurrentUserProfileView.swift in Sources */,
 				DE38B2812B27856D00D60E00 /* ContentView.swift in Sources */,
+				DE5954CE2B333CA900DAC614 /* CreateThreadViewModel.swift in Sources */,
 				DE38B2B42B28D07900D60E00 /* CreateThreadView.swift in Sources */,
 				DE38B2A52B28A86600D60E00 /* ThredsButtonModifier.swift in Sources */,
 				DE38B2A82B28ABCB00D60E00 /* ThreadsTabBar.swift in Sources */,

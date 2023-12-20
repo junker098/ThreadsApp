@@ -96,6 +96,7 @@
 		DE5954CB2B3337D800DAC614 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954CA2B3337D800DAC614 /* Thread.swift */; };
 		DE5954CE2B333CA900DAC614 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954CD2B333CA900DAC614 /* CreateThreadViewModel.swift */; };
 		DE5954D02B333CF400DAC614 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954CF2B333CF400DAC614 /* ThreadService.swift */; };
+		DE5954D32B334D6400DAC614 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5954D22B334D6400DAC614 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +139,7 @@
 		DE5954CA2B3337D800DAC614 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		DE5954CD2B333CA900DAC614 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
 		DE5954CF2B333CF400DAC614 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
+		DE5954D22B334D6400DAC614 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				DE38B2AC2B28CF9200D60E00 /* View */,
+				DE5954D12B334D5100DAC614 /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -567,6 +570,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DE5954D12B334D5100DAC614 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE5954D22B334D6400DAC614 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -721,6 +732,7 @@
 				DE38B2812B27856D00D60E00 /* ContentView.swift in Sources */,
 				DE5954CE2B333CA900DAC614 /* CreateThreadViewModel.swift in Sources */,
 				DE38B2B42B28D07900D60E00 /* CreateThreadView.swift in Sources */,
+				DE5954D32B334D6400DAC614 /* FeedViewModel.swift in Sources */,
 				DE38B2A52B28A86600D60E00 /* ThredsButtonModifier.swift in Sources */,
 				DE38B2A82B28ABCB00D60E00 /* ThreadsTabBar.swift in Sources */,
 				DE38B30E2B2CDA1900D60E00 /* ContentViewModel.swift in Sources */,

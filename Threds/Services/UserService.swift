@@ -45,6 +45,6 @@ class UserService {
         try await Firestore.firestore().collection("users").document(currentUid).updateData([
             "profileImageUrl" : imageUrl
         ])
-        currentuser?.profileImage = imageUrl
+        currentuser?.profileImageUrl = imageUrl
     }
 }
